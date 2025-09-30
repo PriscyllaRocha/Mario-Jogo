@@ -45,6 +45,10 @@ Mario-Jump/
 
 ---
 
+## 🎮 Demo do Jogo
+
+![Mario Jump Gameplay](./Images/gameplay.gif)
+
 ## 💻 Como Executar
 
 Clone o repositório:
