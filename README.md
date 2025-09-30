@@ -1,6 +1,6 @@
 # Mario Jump 🎮
 
-Mario Jump é um jogo de navegador inspirado no clássico Super Mario, onde o jogador controla o Mario e precisa pular obstáculos (canos) para ganhar pontos. O jogo registra o **Score** e o **Recorde** do jogador usando o `localStorage`, permitindo que o recorde seja mantido mesmo após atualizar a página.
+Mario Jump é um jogo de navegador inspirado no clássico Super Mario, onde o jogador controla o Mario e precisa pular obstáculos (canos) para ganhar pontos. O jogo registra o Score e o Recorde do jogador usando o `localStorage`, permitindo que o recorde seja mantido mesmo após atualizar a página.
 
 ---
 
