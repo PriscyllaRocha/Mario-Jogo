@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap'); /* importar uma letra estilo Super Mario */
+
 * {
     margin: 0;
     padding: 0;
@@ -39,15 +41,23 @@
 
 }
 
-.score {
+.score, .high-score {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 24px;
+    font-weight: bold;
+    color: #ff0000;
+    text-shadow: 2px 2px 3px #000;
     position: absolute;
+}
+
+.score {
     top: 20px;
     left: 20px;
-    font-size: 28px;
-    font-weight: bold;
-    color: #fff;
-    text-shadow: 2px 2px 3px #000;
-    font-family: Arial, sans-serif;
+}
+
+.high-score {
+    top: 20px;
+    right: 20px;
 }
 
 @keyframes pipe-animation {
