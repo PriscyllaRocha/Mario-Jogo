@@ -47,7 +47,7 @@ Mario-Jump/
 
 ## 🎮 Demo do Jogo
 
-![Mario Jump Gameplay](./Images/gameplay.gif)
+![Mario Jump Gameplay](./Images/Mario-Jump.gif)
 
 ## 💻 Como Executar
 
