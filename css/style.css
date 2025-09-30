@@ -3,7 +3,7 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing:bprdex-box;
+    box-sizing:bordex-box;
 }
 
 .game-board {
@@ -43,10 +43,12 @@
 
 .score, .high-score {
     font-family: 'Press Start 2P', cursive;
-    font-size: 24px;
+    font-size: 28px; 
     font-weight: bold;
     color: #ff0000;
-    text-shadow: 2px 2px 3px #000;
+    text-shadow: 
+        2px 2px 0 #000000, 
+        0 0 5px #fff;    
     position: absolute;
 }
 
