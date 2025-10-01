@@ -54,4 +54,10 @@ Mario-Jump/
 Clone o repositório:
 ```bash
 git clone https://github.com/seu-usuario/mario-jump.git
+```
+## 📜 Licença
+
+Este é um projeto para fins acadêmicos.  
+Está licenciado sob a [Licença MIT](https://opensource.org/licenses/MIT).
+
 
