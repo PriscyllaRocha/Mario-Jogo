@@ -36,9 +36,9 @@
 
 .clouds {
     position: absolute;
-    width: 550px;
-    animation: clouds-animation 20s infinite linear;
-
+    top: 50px;
+    width: 300px;
+    animation: clouds-game 20s infinite linear;
 }
 
 .score, .high-score {
@@ -63,34 +63,52 @@
 }
 
 .start-screen { /* Estilização da tela START */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  background: linear-gradient(#5fc9f8, #ffffff);
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(#87CEEB, #E0F6FF); 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
 }
 
 .start-jogo { 
-  width: 300px; 
-  margin-bottom: 20px;
+   width: 500px;
+   margin-bottom: 20px;
+   z-index: 2;
 }
 
 .start-btn { /* Estilização do botão START */
-  font-family: 'Press Start 2P', cursive; 
-  font-size: 24px;
-  padding: 15px 40px;
-  background: #ffcc00;
-  border: 4px solid #000;
-  border-radius: 12px;
-  cursor: pointer;
-  transition: transform 0.2s;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 24px;
+    font-weight: bold;
+    color: #ff0000;
+    text-shadow: 2px 2px 0 #000000, 0 0 5px #fff;
+    background-color: #ffea00;
+    border: 4px solid #000;
+    padding: 10px 20px;
+    margin-top: 20px;
+    cursor: pointer;
+    z-index: 2;
 }
 
 .start-btn:hover {
   transform: scale(1.1);
   background: #ffe066;
 }
+
+.clouds-start {
+    position: absolute;
+    animation: float-cloud 2s ease-in-out infinite alternate;
+}
+
+.cloud1-s { top: 100px; left: 30px; width: 250px; }
+.cloud2-s { top: 400px; left: 150px; width: 300px; }
+.cloud3-s { top: 200px; right: 200px; width: 275px; }
+.cloud4-s { top: 500px; right: 100px; width: 300px; }
+.cloud5-s { top: 10px; left: 680px; width: 230px; }
 
 @keyframes pipe-animation {
     from {
@@ -125,11 +143,17 @@
 
 }
 
-@keyframes clouds-animation {
+@keyframes clouds-game {
     from {
-        right: -550px;
+        right: -350px;
     }
     to {
         right: 100%
     }
+}
+
+@keyframes float-cloud {
+    0% { transform: translateX(0); }
+    50% { transform: translateX(20px); } 
+    100% { transform: translateX(0); }
 }
