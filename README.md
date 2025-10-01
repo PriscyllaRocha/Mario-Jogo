@@ -57,5 +57,7 @@ git clone https://github.com/seu-usuario/mario-jump.git
 ```
 ## 📜 Licença
 
-Este projeto está licenciado sob a [Licença MIT](./LICENSE).
+Este é um projeto para fins acadêmicos.  
+Está licenciado sob a [Licença MIT](https://opensource.org/licenses/MIT).
+
 
