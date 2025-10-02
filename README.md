@@ -4,12 +4,25 @@ Mario Jump é um jogo de navegador inspirado no clássico Super Mario, onde o jo
 
 ---
 
+## 🆕 Versão 2 (v2)
+
+Esta é a segunda versão do Mario Jump, com melhorias e novas funcionalidades:
+
+- Tela de iniciar com botão de Start.  
+- Tela de Game Over ao colidir com os canos.  
+- Botão de Reset que leva até a tela Start para iniciar o jogo sem precisar atualizar a página.  
+- Ajustes na lógica de colisão para que o jogo pare corretamente ao bater nos canos.  
+- Score e Recorde continuam funcionando normalmente após reiniciar.
+
+---
+
 ## 🕹️ Como Jogar
 
 - Pressione qualquer tecla para fazer o Mario pular.  
 - Evite bater nos canos que aparecem na tela.  
-- Cada cano ultrapassado aumenta o seu **Score**.  
-- Se o Mario colidir com um cano, o jogo termina, mas o **Recorde** é salvo.
+- Cada cano ultrapassado aumenta o seu Score.  
+- Se o Mario colidir com um cano, o jogo termina, mas o Recorde é salvo.
+- Após a morte, clique no botão Reset para reiniciar o jogo.
 
 ---
 
@@ -36,13 +49,15 @@ Mario-Jump/
 ├── pipe.png
 └── game-over.png
 
-## Funcionalidades Extras
+## Funcionalidades Extras (v2)
 
-- Score e Recorde com fonte estilo Super Mario (Press Start 2P).
-- Contorno preto no texto para melhor visualização.
-- Nuvens se movendo no fundo para dar sensação de movimento.
-- O jogo continua acumulando Score indefinidamente até o Mario colidir.
-
+- Tela de início com botão de Start.  
+- Score e Recorde com fonte estilo Super Mario (Press Start 2P).  
+- Contorno preto no texto para melhor visualização.  
+- Nuvens se movendo no fundo para dar sensação de movimento.  
+- Tela de Game Over centralizada com botão de Reset.  
+- Jogo pausa corretamente ao colidir com os canos.  
+- Score continua acumulando normalmente após reiniciar.
 ---
 
 ## 🎮 Demo do Jogo
