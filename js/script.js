@@ -83,20 +83,23 @@ function gameOver() {
     clearInterval(gameLoop);
     isGameOver = true;
 
-    /* Para aparecer a tela de game over */
+    const pipePosition = pipe.offsetLeft;
+    const marioPosition = +window.getComputedStyle(mario).bottom.replace('px','');
+
+    mario.classList.remove('jump'); 
+    mario.style.animation = 'none'; 
+    
+    mario.style.bottom = `${marioPosition}px`; 
+
     gameOverScreen.style.display = 'flex';
 
-    const pipePosition = pipe.offsetLeft;
     pipe.style.animation = 'none';
     pipe.style.left = `${pipePosition}px`;
 
-    const marioPosition = +window.getComputedStyle(mario).bottom.replace('px','');
     mario.src = './Images/game-over.png';
     mario.style.width = '60px';
     mario.style.marginLeft = '45px';
-    mario.style.bottom = `${marioPosition}px`;
-
-    /* Para atualizar o recorde */
+    
     if (score > highScore) {
         highScore = score;
         localStorage.setItem('highScore', highScore); 
